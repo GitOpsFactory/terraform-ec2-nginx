@@ -6,8 +6,6 @@ output "public_dns" {
   value = aws_instance.nginx.public_dns
 }
 
-}
-
 output "website" {
   value = "http://${aws_instance.nginx.public_ip}"
 }
