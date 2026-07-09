@@ -1,23 +1,48 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+*.tfplan
+*.plan
+
+# Crash log
+crash.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# Dependency lock file
+# Keep this file if you're working in a team to ensure consistent provider versions.
+# Uncomment the next line only if you don't want to track it.
+# .terraform.lock.hcl
+
+# Sensitive files
+*.pem
+*.key
+*.p12
+
+# IDE files
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+.vs/
